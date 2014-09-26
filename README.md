@@ -8,11 +8,22 @@ Just pass the method the event obj and it will return the distance you need (as 
 npm install mouse-pos
 ```
 
-#### getRelCoords(e) - relative to the target
+use it like this
+
+```
+var mouse = require("mouse-pos");
+var el = document.getElementById("outside");
+el.addEventListener("click", function(e){
+console.log("rel coords", mouse.getRel(e)); // e.g. [5,5]
+console.log("abs coords", mouse.getAbs(e)); // e.g. [205,205]
+});
+```
+
+#### getRel(e) - relative to the target
 
 `[x,y]`
 
-#### getAbsCoords(e) - absolute to the screen
+#### getAbs(e) - absolute to the screen
 
 `[x,y]`
 
@@ -20,3 +31,5 @@ npm install mouse-pos
 
 `float` of pixels the mouse wheel moved. Could be negative.
 
+
+Enjoy!

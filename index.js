@@ -1,7 +1,7 @@
 var Mouse;
 
 module.exports = Mouse = {
-  getRelCoords: function(e) {
+  getRel: function(e) {
     var mouseX, mouseY, rect, target;
     mouseX = e.offsetX;
     mouseY = e.offsetY;
@@ -23,7 +23,7 @@ module.exports = Mouse = {
     }
     return [mouseX, mouseY];
   },
-  getAbsCoords: function(e) {
+  getAbs: function(e) {
     var mouseX, mouseY;
     mouseX = e.pageX;
     mouseY = e.pageY;
@@ -51,6 +51,6 @@ module.exports = Mouse = {
     return delta;
   },
   // legacy stuff
-  getMouseCoordsScreen: Mouse.getAbsCoords,
-  getMouseCoords: Mouse.getRelCoords,
+  getMouseCoordsScreen: Mouse.getAbs,
+  getMouseCoords: Mouse.getRel,
 };

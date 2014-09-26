@@ -1,0 +1,24 @@
+{
+  "name": "mouse-pos",
+  "version": "1.0.0",
+  "description": "A simple and lightweight lib to get cross-browser mouse events",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/greenify/mouse-pos"
+  },
+  "keywords": [
+    "mouse",
+    "browser",
+    "event",
+    "mousewheel",
+    "scroll",
+    "touch",
+    "events"
+  ],
+  "author": "greenify <greenify@notsharingmy.info> (https://github.com/greenify)",
+  "license": "Apache 2"
+}

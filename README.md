@@ -19,15 +19,15 @@ console.log("abs coords", mouse.getAbs(e)); // e.g. [205,205]
 });
 ```
 
-#### getRel(e) - relative to the target
+#### rel(e) - relative to the target
 
 `[x,y]`
 
-#### getAbs(e) - absolute to the screen
+#### abs(e) - absolute to the screen
 
 `[x,y]`
 
-#### getWheelDelta(e)
+#### wheelDelta(e)
 
 `float` of pixels the mouse wheel moved. Could be negative.
 

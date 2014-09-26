@@ -1,7 +1,7 @@
 var Mouse;
 
 module.exports = Mouse = {
-  getRel: function(e) {
+  rel: function(e) {
     var mouseX, mouseY, rect, target;
     mouseX = e.offsetX;
     mouseY = e.offsetY;
@@ -23,7 +23,7 @@ module.exports = Mouse = {
     }
     return [mouseX, mouseY];
   },
-  getAbs: function(e) {
+  abs: function(e) {
     var mouseX, mouseY;
     mouseX = e.pageX;
     mouseY = e.pageY;
@@ -41,7 +41,7 @@ module.exports = Mouse = {
     }
     return [mouseX, mouseY];
   },
-  getWheelDelta: function(e) {
+  wheelDelta: function(e) {
     var delta, dir;
     delta = [e.deltaX, e.deltaY];
     if (delta[0] == null) {
@@ -49,8 +49,5 @@ module.exports = Mouse = {
       delta = [0, e.mozMovementX * dir];
     }
     return delta;
-  },
-  // legacy stuff
-  getMouseCoordsScreen: Mouse.getAbs,
-  getMouseCoords: Mouse.getRel,
+  }
 };

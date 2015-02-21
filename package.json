@@ -1,6 +1,6 @@
 {
   "name": "mouse-pos",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "A simple and lightweight lib to get cross-browser mouse events",
   "main": "index.js",
   "scripts": {
